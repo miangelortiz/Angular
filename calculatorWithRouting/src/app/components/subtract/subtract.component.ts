@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-subtract',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./subtract.component.scss']
 })
 export class SubtractComponent implements OnInit {
-
-  constructor() { }
+  public total:number;
+  constructor(public dataService: DataService) { 
+    this.total = dataService.number1 - dataService.number2;
+  }
 
   ngOnInit() {
   }

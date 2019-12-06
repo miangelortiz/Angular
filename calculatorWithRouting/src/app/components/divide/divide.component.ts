@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { DataService } from "../../services/data.service";
 
 @Component({
-  selector: 'app-divide',
-  templateUrl: './divide.component.html',
-  styleUrls: ['./divide.component.scss']
+  selector: "app-divide",
+  templateUrl: "./divide.component.html",
+  styleUrls: ["./divide.component.scss"]
 })
 export class DivideComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  public total: number;
+  constructor(public dataService: DataService) {
+    this.total = dataService.number1 / dataService.number2;
   }
 
+  ngOnInit() {}
 }

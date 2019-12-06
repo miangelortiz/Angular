@@ -4,8 +4,8 @@ import { Injectable } from "@angular/core";
   providedIn: "root"
 })
 export class DataService {
-  number1: number;
-  number2: number;
-  
+  number1: number = 0;
+  number2: number = 0;
+
   constructor() {}
 }

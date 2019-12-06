@@ -1,1 +1,24 @@
-<p>home works!</p>
+<div class="container-fluid">
+        <div class="row">
+          <div class="col text1">
+            <h3>
+              A simple example of routing and components in Angular with simple
+              operations.
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text2">
+            <p>Enter two numbers and choose the operation in the navigation bar.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xs-2 ">
+            <input [(ngModel)]="number1" class="form-control" type="number" placeholder="Number 1" (change)="add()" />
+          </div>
+          <div class="col-xs-2 ">
+            <input [(ngModel)]="number2" class="form-control" type="number" placeholder="Number 2" (change)="add()" />
+          </div>
+        </div>
+        <p >{{total}}</p>
+      </div>

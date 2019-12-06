@@ -1,6 +1,6 @@
 #  Angular examples
-## practicing and learning with angular
+**practicing and learning with angular**
 
 ## Content
 
-### **CalculatorWithRouting** - Simple example of calculator using routing and services -
+**CalculatorWithRouting** - Simple example of calculator using routing and services -

@@ -1,0 +1,7 @@
+<div class="card-deck">
+  <app-card
+    *ngFor="let movie of movies"
+    [movie]="movie"
+    (message)="messageEmitted($event)"
+  ></app-card>
+</div>

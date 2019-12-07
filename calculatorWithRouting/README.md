@@ -11,4 +11,4 @@ Be sure that you have Node.JS installed in your device. If not, please visit [No
 
 ## Start
 * Open your command-line interface and execute 'npm install' in project's directory to add all packages from package.json needed to run the app.
-* Use 'npm start' or 'ng serve' to start the server and navigate to [http://localhost:4200/]
+* Use 'npm start' or 'ng serve' to start the server and navigate to `http://localhost:4200/`

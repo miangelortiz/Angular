@@ -9,7 +9,10 @@
   </div>
   <div class="row">
     <div class="col text2">
-      <p>Enter two numbers and choose the operation in the navigation bar.</p>
+      <p>
+        Enter two numbers to see the result or choose an option from the
+        navigation bar.
+      </p>
     </div>
   </div>
   <div class="row justify-content-center">
@@ -19,7 +22,7 @@
         class="form-control"
         type="number"
         placeholder="Number 1"
-        (change)="add()"
+        (change)="changeInput()"
       />
     </div>
     <div class="col-xs-2 ">
@@ -28,9 +31,28 @@
         class="form-control"
         type="number"
         placeholder="Number 2"
-        (change)="add()"
+        (change)="changeInput()"
       />
     </div>
   </div>
-  <p>{{ total }}</p>
+  <div class="row justify-content-center result">
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item">
+        {{ number1 }} + {{ number2 }} =
+        <span class="total">{{ totalAdd }}</span>
+      </li>
+      <li class="list-group-item">
+        {{ number1 }} - {{ number2 }} =
+        <span class="total">{{ totalSubtract }}</span>
+      </li>
+      <li class="list-group-item">
+        {{ number1 }} * {{ number2 }} =
+        <span class="total">{{ totalMultiply }}</span>
+      </li>
+      <li class="list-group-item">
+        {{ number1 }} / {{ number2 }} =
+        <span class="total">{{ totalDivide }}</span>
+      </li>
+    </ul>
+  </div>
 </div>

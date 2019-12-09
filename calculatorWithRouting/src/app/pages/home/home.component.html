@@ -22,7 +22,7 @@
         class="form-control"
         type="number"
         placeholder="Number 1"
-        (change)="changeInput()"
+        (input)="changeInput($event.target.value)"
       />
     </div>
     <div class="col-xs-2 ">
@@ -31,7 +31,7 @@
         class="form-control"
         type="number"
         placeholder="Number 2"
-        (change)="changeInput()"
+        (input)="changeInput($event.target.value)"
       />
     </div>
   </div>

@@ -31,6 +31,7 @@ export class HomeComponent implements OnInit {
     this.totalSubtract = this.number1 - this.number2;
     this.totalMultiply = this.number1 * this.number2;
     this.totalDivide = this.number1 / this.number2;
+
     this.dataService.number1 = this.number1;
     this.dataService.number2 = this.number2;
   }
